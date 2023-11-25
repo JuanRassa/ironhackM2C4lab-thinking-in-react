@@ -36,3 +36,67 @@
     transform: rotate(360deg);
   }
 }
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.flex-row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+}
+
+.search-container {
+  border-bottom: 1px solid #ccc;
+  margin: 0 auto 1rem;
+  padding: 1rem 0;
+  gap: 1rem;
+}
+.search-input {
+  width: 50%;
+  gap: 1rem;
+}
+.search-input input {
+  height: 20px;
+  width: 100%;
+}
+.search-filterByStock {
+  width: 50%;
+  height: 30px;
+  gap: 10px;
+}
+.search-filterByStock input {
+  margin: 0;
+  width: 20px;
+  height: 15px;
+}
+
+.product-table {
+}
+.product-table table {
+  width: 80%;
+  border-collapse: collapse;
+}
+
+.product-table thead {
+  background-color: grey;
+}
+
+.product-table thead td {
+  padding: 20px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+.product-table tbody td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.product-table tbody tr:nth-child(even) {
+  background-color: #eee;
+}
