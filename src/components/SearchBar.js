@@ -3,7 +3,12 @@ const SearchBar = () => {
     <div className="search-container flex-col-center">
       <div className="search-input flex-col-center">
         <label htmlFor="searchProducts">Search</label>
-        <input type="text" name="searchProducts" id="searchProducts" />
+        <input
+          type="text"
+          name="searchProducts"
+          id="searchProducts"
+          placeholder="Search product..."
+        />
       </div>
       <div className="search-filterByStock flex-row-center">
         <label htmlFor="onlyInStock">Only show products in stock</label>

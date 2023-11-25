@@ -100,3 +100,6 @@ h1 {
 .product-table tbody tr:nth-child(even) {
   background-color: #eee;
 }
+.product-table tbody tr.outOfStock .product-name {
+  color: #f00;
+}

@@ -12,7 +12,7 @@ const ProductsPage = () => {
     <>
       <h1>IronStore</h1>
       <SearchBar />
-      <ProductTable />
+      <ProductTable stockData={rawData} />
     </>
   );
 };

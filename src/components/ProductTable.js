@@ -1,4 +1,7 @@
-const ProductTable = () => {
+import ProductRow from './ProductRow';
+
+const ProductTable = ({ stockData }) => {
+  console.log('stockData', stockData);
   return (
     <div className="product-table flex-col-center">
       <h2>Product Table</h2>
@@ -11,10 +14,9 @@ const ProductTable = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Product Name!</td>
-            <td>Product Price$</td>
-          </tr>
+          {stockData.map((product) => {
+            return <ProductRow key={product.id} productInfo={product} />;
+          })}
         </tbody>
       </table>
     </div>
