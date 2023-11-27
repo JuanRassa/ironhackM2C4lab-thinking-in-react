@@ -59,7 +59,8 @@ h1 {
   gap: 1rem;
 }
 .search-input {
-  width: 50%;
+  min-width: 360px;
+  width: 30%;
   gap: 1rem;
 }
 .search-input input {
@@ -77,11 +78,14 @@ h1 {
   height: 15px;
 }
 
-.product-table {
+.product-table table td {
+  width: 50%;
 }
 .product-table table {
   width: 80%;
   border-collapse: collapse;
+  border: 1px solid;
+  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.75);
 }
 
 .product-table thead {

@@ -1,7 +1,7 @@
 import ProductRow from './ProductRow';
 
-const ProductTable = ({ stockData }) => {
-  console.log('stockData', stockData);
+const ProductTable = ({ stockData, searchResult }) => {
+  // console.log('searchResult', searchResult);
   return (
     <div className="product-table flex-col-center">
       <h2>Product Table</h2>
@@ -14,7 +14,7 @@ const ProductTable = ({ stockData }) => {
           </tr>
         </thead>
         <tbody>
-          {stockData.map((product) => {
+          {searchResult.map((product) => {
             return <ProductRow key={product.id} productInfo={product} />;
           })}
         </tbody>

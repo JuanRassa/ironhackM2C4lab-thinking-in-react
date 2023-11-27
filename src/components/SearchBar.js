@@ -1,9 +1,16 @@
-const SearchBar = () => {
+const SearchBar = ({
+  searchTerm,
+  updateSearchTerm,
+  showOnlyInStock,
+  setShowOnlyInStock,
+}) => {
   return (
     <div className="search-container flex-col-center">
       <div className="search-input flex-col-center">
-        <label htmlFor="searchProducts">Search</label>
+        {/* <label htmlFor="searchProducts">Search</label> */}
         <input
+          value={searchTerm}
+          onInput={(e) => updateSearchTerm(e.target.value)}
           type="text"
           name="searchProducts"
           id="searchProducts"
@@ -12,7 +19,13 @@ const SearchBar = () => {
       </div>
       <div className="search-filterByStock flex-row-center">
         <label htmlFor="onlyInStock">Only show products in stock</label>
-        <input type="checkbox" name="onlyInStock" id="onlyInStock" />
+        <input
+          value={showOnlyInStock}
+          onInput={(e) => setShowOnlyInStock(e.target.checked)}
+          type="checkbox"
+          name="onlyInStock"
+          id="onlyInStock"
+        />
       </div>
     </div>
   );
